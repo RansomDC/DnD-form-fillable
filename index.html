@@ -4,6 +4,7 @@
         <meta charset="utf-8"/>
         <title>Character Sheet</title>
         <link rel="stylesheet" href="style.css"/>
+        <script src="script.js" defer></script>
     </head>
 
     <body>
@@ -11,16 +12,17 @@
             <div>
                 <div>Character Name</div>
                 <div class="charname"></div>
+                <button class="calculate" onclick="calculate()">Click to calculate</button>
             </div>
             <div class="charinfo">
                 <div class="infoupper">
                     <div>
                         <div>Class</div>
-                        <div class="charclass"></div>
+                        <input type="text" class="charclass">
                     </div>
                     <div>
                         <div>Level</div>
-                        <div class="charlvl"></div>
+                        <input type="text" class="charlvl">
                     </div>
                     <div>
                         <div>Background</div>
@@ -58,8 +60,9 @@
                         </div>
                         <div class="att dex">
                             Dexterity
+                            <input type="text" class="attributeInputs dexterity">
                             <div>score</div>
-                            <div class="dexmod">mod</div>
+                            <div class="dexmod"></div>
                         </div>
                         <div class="att con">
                             Constitution
@@ -88,129 +91,129 @@
                             <div>Insipration</div>
                         </div>
                         <div class="profbo">
-                            <div>num</div>
+                            <div></div>
                             <div>Proficiency Bonus</div>
                         </div>
                         <div class="throws">
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                             <div class="singlethrow">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>attribute</div>
                             </div>
                         </div>
                         <div class="skills">
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox" id="acrobatics">
+                                <div class="acrobaticsResult"></div>
+                                <div>Acrobatics</div>
+                            </div>
+                            <div class="">
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
                             <div class="">
-                                <div>B</div>
-                                <div>IN</div>
-                                <div>skill</div>
-                            </div>
-                            <div class="">
-                                <div>B</div>
+                                <input type="checkbox">
                                 <div>IN</div>
                                 <div>skill</div>
                             </div>
@@ -339,6 +342,5 @@
                 <div class="Feats&traits">Dropdown + output</div>
             </div>
         </div>
-        <script src="script.js"></script>
     </body>
 </HTML>

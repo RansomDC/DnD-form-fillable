@@ -40,3 +40,12 @@ body {
 .skills div {
     display: flex;
 }
+
+.attributeInputs.dexterity {
+    display: block;
+    width: 15px;
+}
+
+button.calculate {
+    display: inline-block;
+}
